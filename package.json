@@ -1,0 +1,20 @@
+{
+  "name": "graphlib-git",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dominictarr/graphlib-git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/graphlib-git.git"
+  },
+  "dependencies": {
+    "graphlib-adjacency": "~1.0.1",
+    "pull-stream": "~2.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "license": "MIT"
+}
