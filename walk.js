@@ -25,6 +25,10 @@ function type (v) {
   delete v._raw
   delete v._data
 }
+function short (s) {
+  return s && s.substring(0, 8)
+}
+
 var gitGraph = 
 module.exports = function gitGraph(repo, head, cb) {
   var graph = new Graph()
@@ -33,12 +37,16 @@ module.exports = function gitGraph(repo, head, cb) {
 
   function find(key, parent, val) {
     key = getId(key)
+    parent = short(parent)
     n ++
 
-    function branch (ary, getVal) {
+    function branch (ary, _getVal) {
+      var getVal = _getVal
+      if('function' !== typeof getVal)
+        getVal = function () {return _getVal}
       if(Array.isArray(ary))
         ary.forEach(function (e) {
-          find(e.hash || e, key, getVal && getVal(e))
+          find(e.hash || e, key, getVal(e))
         })
     }
 
@@ -47,24 +55,25 @@ module.exports = function gitGraph(repo, head, cb) {
 
     repo.find(key, function g (err, obj) {
       var id = getId(obj.hash)
-
-      if(!graph.hasNode(id)) {
-        graph.addNode(id)
+      var _id = short(id)
+      if(!graph.hasNode(_id)) {
+        graph.addNode(_id)
         type(obj)
-        graph.node(id, obj)
+        graph.node(_id, obj)
       }
 
       if(parent) {
-        if(parent !== id) {
-          graph.addEdge(null, parent, id, val || {})
+        if(parent !== _id) {
+          if(!graph.hasEdge(parent+'-'+_id))
+            graph.addEdge(parent+'-'+_id, parent, _id, val || {})
         } else
           return next()
       }
       branch(obj._members, function val (v) {
         return {label: v.name}
       })
-      branch(obj._attrs && obj._attrs.parent)
-      branch(obj._attrs && obj._attrs.tree)
+      branch(obj._attrs && obj._attrs.parent, {label: 'parent'})
+      branch(obj._attrs && obj._attrs.tree, {label: 'tree'})
       next()
     })
   }
@@ -80,12 +89,13 @@ module.exports = function gitGraph(repo, head, cb) {
 
 load('.git/', function (err, repo) {
   var adj = require('graphlib-adjacency')
-
+  var DOT = require('graphlib-dot')
   var master = require('fs').readFileSync('.git/refs/heads/master', 'utf8').trim()
   gitGraph(repo, master, function (err, graph) {
 //    console.log(graph)
 //    console.log(JSON.stringify(graph, null, 2))
-    console.log(JSON.stringify(adj.toAdjacency(graph), null, 2))
+//    console.log(JSON.stringify(adj.toAdjacency(graph), null, 2))
+    console.log(DOT.encode(graph))
   })
 
 })
