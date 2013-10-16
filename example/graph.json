@@ -1,209 +1,30 @@
-{
-  "71cb750fbef24a33bf8fb74201e96e5128deb4c7": {
-    "value": {
-      "_attrs": {
-        "tree": [
-          "1cdb92c0ac2dfd993dc05a705187ff98bb34b084"
-        ],
-        "parent": [
-          "6e3e3f6c62cdebd8c1c24c0356ad3abc62bb7bc8"
-        ],
-        "author": [
-          "Dominic Tarr <dominic.tarr@gmail.com> 1377373337 +0100"
-        ],
-        "committer": [
-          "Dominic Tarr <dominic.tarr@gmail.com> 1377373337 +0100"
-        ]
-      },
-      "_message": "1.0.0\n",
-      "_header": [
-        [
-          0,
-          4,
-          45
-        ],
-        [
-          46,
-          52,
-          93
-        ],
-        [
-          94,
-          100,
-          155
-        ],
-        [
-          156,
-          165,
-          220
-        ]
-      ],
-      "hash": "71cb750fbef24a33bf8fb74201e96e5128deb4c7",
-      "type": "commit"
-    },
-    "edges": [
-      "6e3e3f6c62cdebd8c1c24c0356ad3abc62bb7bc8",
-      "1cdb92c0ac2dfd993dc05a705187ff98bb34b084"
-    ]
-  },
-  "6e3e3f6c62cdebd8c1c24c0356ad3abc62bb7bc8": {
-    "value": {
-      "_attrs": {
-        "tree": [
-          "42787687518fd091f3c85a1f03ce8295aff6af4d"
-        ],
-        "author": [
-          "Dominic Tarr <dominic.tarr@gmail.com> 1377373319 +0100"
-        ],
-        "committer": [
-          "Dominic Tarr <dominic.tarr@gmail.com> 1377373319 +0100"
-        ]
-      },
-      "_message": "initial\n",
-      "_header": [
-        [
-          0,
-          4,
-          45
-        ],
-        [
-          46,
-          52,
-          107
-        ],
-        [
-          108,
-          117,
-          172
-        ]
-      ],
-      "hash": "6e3e3f6c62cdebd8c1c24c0356ad3abc62bb7bc8",
-      "type": "commit"
-    },
-    "edges": [
-      "42787687518fd091f3c85a1f03ce8295aff6af4d"
-    ]
-  },
-  "1cdb92c0ac2dfd993dc05a705187ff98bb34b084": {
-    "value": {
-      "_members": [
-        {
-          "mode": 33188,
-          "name": ".travis.yml",
-          "hash": "2a2fd9893a22aef416056ba0950fe4de8d8fdc61"
-        },
-        {
-          "mode": 33188,
-          "name": "LICENSE",
-          "hash": "b799ec00c496c27193b0421317f9b7d39aadbb26"
-        },
-        {
-          "mode": 33188,
-          "name": "README.md",
-          "hash": "1edfcd04de045572acae34036bbb14eac728df82"
-        },
-        {
-          "mode": 33188,
-          "name": "index.js",
-          "hash": "2335569a26716188d412f729594cfdf5b25cca35"
-        },
-        {
-          "mode": 33188,
-          "name": "package.json",
-          "hash": "cb62c12bc221dd127d93d7e1145599e8b32b1e55"
-        }
-      ],
-      "hash": "1cdb92c0ac2dfd993dc05a705187ff98bb34b084",
-      "type": "tree"
-    },
-    "edges": [
-      "2a2fd9893a22aef416056ba0950fe4de8d8fdc61",
-      "b799ec00c496c27193b0421317f9b7d39aadbb26",
-      "1edfcd04de045572acae34036bbb14eac728df82",
-      "2335569a26716188d412f729594cfdf5b25cca35",
-      "cb62c12bc221dd127d93d7e1145599e8b32b1e55"
-    ]
-  },
-  "42787687518fd091f3c85a1f03ce8295aff6af4d": {
-    "value": {
-      "_members": [
-        {
-          "mode": 33188,
-          "name": ".travis.yml",
-          "hash": "2a2fd9893a22aef416056ba0950fe4de8d8fdc61"
-        },
-        {
-          "mode": 33188,
-          "name": "LICENSE",
-          "hash": "b799ec00c496c27193b0421317f9b7d39aadbb26"
-        },
-        {
-          "mode": 33188,
-          "name": "README.md",
-          "hash": "1edfcd04de045572acae34036bbb14eac728df82"
-        },
-        {
-          "mode": 33188,
-          "name": "index.js",
-          "hash": "2335569a26716188d412f729594cfdf5b25cca35"
-        },
-        {
-          "mode": 33188,
-          "name": "package.json",
-          "hash": "304932261ec3601216a8d90b6ca1287c1aa0698c"
-        }
-      ],
-      "hash": "42787687518fd091f3c85a1f03ce8295aff6af4d",
-      "type": "tree"
-    },
-    "edges": [
-      "2a2fd9893a22aef416056ba0950fe4de8d8fdc61",
-      "b799ec00c496c27193b0421317f9b7d39aadbb26",
-      "1edfcd04de045572acae34036bbb14eac728df82",
-      "2335569a26716188d412f729594cfdf5b25cca35",
-      "304932261ec3601216a8d90b6ca1287c1aa0698c"
-    ]
-  },
-  "2a2fd9893a22aef416056ba0950fe4de8d8fdc61": {
-    "value": {
-      "hash": "2a2fd9893a22aef416056ba0950fe4de8d8fdc61",
-      "type": "blob"
-    },
-    "edges": []
-  },
-  "b799ec00c496c27193b0421317f9b7d39aadbb26": {
-    "value": {
-      "hash": "b799ec00c496c27193b0421317f9b7d39aadbb26",
-      "type": "blob"
-    },
-    "edges": []
-  },
-  "1edfcd04de045572acae34036bbb14eac728df82": {
-    "value": {
-      "hash": "1edfcd04de045572acae34036bbb14eac728df82",
-      "type": "blob"
-    },
-    "edges": []
-  },
-  "2335569a26716188d412f729594cfdf5b25cca35": {
-    "value": {
-      "hash": "2335569a26716188d412f729594cfdf5b25cca35",
-      "type": "blob"
-    },
-    "edges": []
-  },
-  "cb62c12bc221dd127d93d7e1145599e8b32b1e55": {
-    "value": {
-      "hash": "cb62c12bc221dd127d93d7e1145599e8b32b1e55",
-      "type": "blob"
-    },
-    "edges": []
-  },
-  "304932261ec3601216a8d90b6ca1287c1aa0698c": {
-    "value": {
-      "hash": "304932261ec3601216a8d90b6ca1287c1aa0698c",
-      "type": "blob"
-    },
-    "edges": []
-  }
+digraph {
+    de50d486715fd11b3f38253da9982f5f0f6d234f -> a7110f15a312fb3df52fd077008e0820ebba75d7
+    de50d486715fd11b3f38253da9982f5f0f6d234f -> f955dc7569a1e24d5c855a7bfb788b4e7d321b9b
+    a7110f15a312fb3df52fd077008e0820ebba75d7 -> "71cb750fbef24a33bf8fb74201e96e5128deb4c7"
+    a7110f15a312fb3df52fd077008e0820ebba75d7 -> e046d52071fb0876ae92a09c22d02a8aa9f9b5fd
+    f955dc7569a1e24d5c855a7bfb788b4e7d321b9b -> "2a2fd9893a22aef416056ba0950fe4de8d8fdc61" [label=".travis.yml"]
+    f955dc7569a1e24d5c855a7bfb788b4e7d321b9b -> b799ec00c496c27193b0421317f9b7d39aadbb26 [label=LICENSE]
+    f955dc7569a1e24d5c855a7bfb788b4e7d321b9b -> "1edfcd04de045572acae34036bbb14eac728df82" [label="README.md"]
+    f955dc7569a1e24d5c855a7bfb788b4e7d321b9b -> "0b252646338daa3d8715330a6138ddd2014359eb" [label=example]
+    f955dc7569a1e24d5c855a7bfb788b4e7d321b9b -> "2335569a26716188d412f729594cfdf5b25cca35" [label="index.js"]
+    f955dc7569a1e24d5c855a7bfb788b4e7d321b9b -> "0d479291d0a77a543fb61902dc33e0d47ffcf4bd" [label="package.json"]
+    f955dc7569a1e24d5c855a7bfb788b4e7d321b9b -> f77cf29a9a97ef4a34ff387abc6e94ba98e87851 [label="walk.js"]
+    "71cb750fbef24a33bf8fb74201e96e5128deb4c7" -> "6e3e3f6c62cdebd8c1c24c0356ad3abc62bb7bc8"
+    "71cb750fbef24a33bf8fb74201e96e5128deb4c7" -> "1cdb92c0ac2dfd993dc05a705187ff98bb34b084"
+    e046d52071fb0876ae92a09c22d02a8aa9f9b5fd -> "2a2fd9893a22aef416056ba0950fe4de8d8fdc61" [label=".travis.yml"]
+    e046d52071fb0876ae92a09c22d02a8aa9f9b5fd -> b799ec00c496c27193b0421317f9b7d39aadbb26 [label=LICENSE]
+    e046d52071fb0876ae92a09c22d02a8aa9f9b5fd -> "1edfcd04de045572acae34036bbb14eac728df82" [label="README.md"]
+    e046d52071fb0876ae92a09c22d02a8aa9f9b5fd -> "0b252646338daa3d8715330a6138ddd2014359eb" [label=example]
+    e046d52071fb0876ae92a09c22d02a8aa9f9b5fd -> "2335569a26716188d412f729594cfdf5b25cca35" [label="index.js"]
+    e046d52071fb0876ae92a09c22d02a8aa9f9b5fd -> cb62c12bc221dd127d93d7e1145599e8b32b1e55 [label="package.json"]
+    e046d52071fb0876ae92a09c22d02a8aa9f9b5fd -> f77cf29a9a97ef4a34ff387abc6e94ba98e87851 [label="walk.js"]
+    "0b252646338daa3d8715330a6138ddd2014359eb" -> "346c3bb4fc9b6bce027a66c5ca0f1e4592a1baa2" [label="demo.js"]
+    "0b252646338daa3d8715330a6138ddd2014359eb" -> bb8e82ddf91962bdb757fe952267a798ba1b86ae [label="graph.json"]
+    "0b252646338daa3d8715330a6138ddd2014359eb" -> c278286f5c770421c90b93f404d5cb9ca3d06295 [label="style.css"]
+    "6e3e3f6c62cdebd8c1c24c0356ad3abc62bb7bc8" -> "42787687518fd091f3c85a1f03ce8295aff6af4d"
+    "1cdb92c0ac2dfd993dc05a705187ff98bb34b084" -> cb62c12bc221dd127d93d7e1145599e8b32b1e55 [label="package.json"]
+    "42787687518fd091f3c85a1f03ce8295aff6af4d" -> "304932261ec3601216a8d90b6ca1287c1aa0698c" [label="package.json"]
+    "0b252646338daa3d8715330a6138ddd2014359eb" -> d78deca2c2decba535eba868b9718abe8c7e1d91 [label="index.html"]
 }
+

@@ -2,9 +2,11 @@
 var adj = require('graphlib-adjacency')
 d3 = require('d3')
 var dagreD3 = require('dagre-d3')
+var fs = require('fs')
 
+var g = //adj.toGraph(require('./graph.json'))
 
-var g = adj.toGraph(require('./graph.json'))
+g = require('graphlib-dot').decode(fs.readFileSync(__dirname + '/graph.dot', 'utf8'))
 
 if(false) {
 
@@ -33,7 +35,7 @@ if(false) {
 }
 
 var el = document.createElement('div')
-el.innerHTML = '<svg width=650 height=680><g transform="translate(20,20)"/></svg>'
+el.innerHTML = '<svg width=1650 height=1680><g transform="translate(20,20)"/></svg>'
 document.body.appendChild(el)
 
 var renderer = new dagreD3.Renderer();
@@ -42,7 +44,7 @@ G = g
 
 var layout = dagreD3
     .layout()
-    .nodeSep(20)
+    .nodeSep(10)
     .rankDir("LR");
 
 //process.nextTick(function () {
