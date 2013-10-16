@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "graphlib-adjacency": "~1.0.1",
-    "pull-stream": "~2.20.1"
+    "pull-stream": "~2.20.1",
+    "graphlib": "~0.5.12"
   },
   "devDependencies": {},
   "scripts": {
