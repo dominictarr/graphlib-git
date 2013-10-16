@@ -10,7 +10,8 @@
   "dependencies": {
     "graphlib-adjacency": "~1.0.1",
     "pull-stream": "~2.20.1",
-    "graphlib": "~0.5.12"
+    "graphlib": "~0.5.12",
+    "graphlib-dot": "git://github.com/dominictarr/graphlib-dot#b592e2fe959f3172a1a8b9476f6fdd5c8ad9d0bf"
   },
   "devDependencies": {},
   "scripts": {
